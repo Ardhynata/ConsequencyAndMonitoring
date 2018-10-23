@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/veriID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0">
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="109dp"
+        android:layout_height="72dp"
+        android:contentDescription="@string/desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pertamina_logo" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="106dp"
+        android:layout_height="77dp"
+        android:contentDescription="@string/desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elpiji_logo" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="341dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <EditText
+        android:id="@+id/verID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#A9A9A9"
+        android:drawableLeft="@drawable/ic_stat_id"
+        android:drawableStart="@drawable/ic_stat_id"
+        android:ems="10"
+        android:hint="@string/id_hint"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <EditText
+        android:id="@+id/passLama"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#A9A9A9"
+        android:drawableLeft="@drawable/ic_stat_lock"
+        android:drawableStart="@drawable/ic_stat_lock"
+        android:ems="10"
+        android:hint="@string/pass_lama"
+        android:inputType="textPassword"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintStart_toStartOf="@+id/verID"
+        app:layout_constraintTop_toBottomOf="@+id/verID" />
+
+    <EditText
+        android:id="@+id/passBaru"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#A9A9A9"
+        android:drawableLeft="@drawable/ic_stat_lock"
+        android:drawableStart="@drawable/ic_stat_lock"
+        android:ems="10"
+        android:hint="@string/pass_baru"
+        android:inputType="textPassword"
+        android:textColorHint="#808080"
+        app:layout_constraintStart_toStartOf="@+id/passLama"
+        app:layout_constraintTop_toBottomOf="@+id/passLama" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roundedbtngreen"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/passBaru"
+        app:layout_constraintTop_toBottomOf="@+id/passBaru" />
+</android.support.constraint.ConstraintLayout>

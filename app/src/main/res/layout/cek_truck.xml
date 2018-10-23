@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    tools:layout_editor_absoluteY="73dp">
+
+    <Button
+        android:id="@+id/btSaveTruck"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbtngreen"
+        android:text="@string/save_button"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView27"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/elpiji_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView27" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/pertamina_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView26" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="341dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btSaveTruck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtKIM"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/kim" />
+
+                    <RadioGroup
+                        android:id="@+id/rgKIM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdKIM1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdKIM2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoKIM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtAPARCO2"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/apar_co2" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAPARCO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdAPARCO21"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdAPARCO22"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoAPARCO2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtAPARDCP"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/apar_dcp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAPARDCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdAPARDCP1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdAPARDCP2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoAPARDCP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtHT"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/head_truck" />
+
+                    <RadioGroup
+                        android:id="@+id/rgHT"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdHT1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdHT2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoHT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtVessel"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/vessel" />
+
+                    <RadioGroup
+                        android:id="@+id/rgV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdV1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdV2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoVessel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtElectricalPart"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/e_part" />
+
+                    <RadioGroup
+                        android:id="@+id/rgEP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdEP1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdEP2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoEP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtLamp"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/lamp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgLamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdLamp1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdLamp2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoLamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBanRoda"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/ban" />
+
+                    <RadioGroup
+                        android:id="@+id/rgBan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdBan1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdBan2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoBan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:background="@drawable/roundbtnyellow"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgKIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgAPARCO2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgAPARDCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgLamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Consquency and Monitoring System</string>
+    <string name="desc">image</string>
+    <string name="text">Consequency and Monitoring System</string>
+    <string name="id"></string>
+    <string name="password"></string>
+    <string name="id_hint">Masukkan ID</string>
+    <string name="pass_hint">Password</string>
+    <string name="plat_hint">NO.PLAT</string>
+    <string name="login">LOGIN</string>
+    <string name="plat"></string>
+    <string name="lihat">LIHAT</string>
+    <string name="kim">KIM</string>
+    <string name="apar_co2">APAR CO2</string>
+    <string name="apar_dcp">APAR DCP</string>
+    <string name="head_truck">HEAD TRUCK</string>
+    <string name="vessel">VESSEL</string>
+    <string name="e_part">ELECTRICAL PART</string>
+    <string name="lamp">LAMP</string>
+    <string name="ban">BAN RODA</string>
+    <string name="foto">FOTO</string>
+    <string name="editfoto">EDIT</string>
+    <string name="rad_s">Sesuai</string>
+    <string name="rad_ts">Tidak Sesuai</string>
+    <string name="camera">camera</string>
+    <string name="cek_truck">CEK</string>
+    <string name="cek_driver">CEK</string>
+    <string name="safety_helm">SAFETY HELMET</string>
+    <string name="uniform">UNIFORM</string>
+    <string name="safety_shoes">SAFETY SHOES</string>
+    <string name="barang_terlarang">BARANG TERLARANG</string>
+    <string name="image_button">btn</string>
+    <string name="save_button">SIMPAN</string>
+    <string name="ganti_pass">Ganti Password</string>
+    <string name="laporan">Laporan Checklist</string>
+    <string name="tambahchecker">Tambah Checker</string>
+    <string name="icon">icon</string>
+    <string name="sppbe_hint">SPPBE</string>
+    <string name="batal">BATAL</string>
+    <string name="ok">OK</string>
+    <string name="no_spa_hint">Masukkan NO.SPA</string>
+    <string name="password_checker">Password Checker</string>
+    <string name="password_verificator">Password Verificator</string>
+    <string name="tolak">TOLAK</string>
+    <string name="terima">TERIMA</string>
+    <string name="peringatan">PERINGATAN</string>
+    <string name="gambar">gambar</string>
+    <string name="ada">Sesuai</string>
+    <string name="ta">Tidak Sesuai</string>
+    <string name="sopir_hint">Masukkan Nama Sopir</string>
+    <string name="no_pol">NO.Polisi</string>
+    <string name="nama_sppbe">Nama SPPBE</string>
+    <string name="status">Status Izin</string>
+    <string name="waktu_masuk">Waktu Masuk</string>
+    <string name="sopir">Nama Sopir</string>
+    <string name="next">Lanjutkan</string>
+    <string name="pass_baru">Masukkan Password Baru</string>
+    <string name="pass_lama">Masukkan Password Lama</string>
+    <string name="pass_tambah">Masukkan Password</string>
+    <string name="welcome_checker">Selamat Datang, Checker\u0020</string>
+    <string name="welcome_verificator">Selamat Datang, Verificator\u0020</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="sppbe">SPPBE</string>
+    <string name="no_spa">No.SPA</string>
+    <string name="ijin_kim">Ijin KIM</string>
+    <string name="comment_hint">Masukkan Comment</string>
+    <string name="consequency">Consequency Calculte</string>
+    <string name="batas_ijin">Batas Ijin Masuk Sementara</string>
+    <string name="unblock">Izin Unblock</string>
+    <string name="blokstat">Skid Tank ini diblokir karena melebihi deadline</string>
+    <string name="izin_unblok">Izin Unblock</string>
+    <string name="deadline">Deadline</string>
+    <string name="tambah_dispen">Tambah Dispensasi</string>
+    <string name="tambah_dispen_hint">Tambahan Dispensasi (hari)</string>
+    <string name="unblok">unblock</string>
+    <string name="logout">logout</string>
+    <string name="tambahtruk">Tambah Truck</string>
+
+    <string name="notification_message">Checker <![CDATA[
+        <b>%1$s</b>
+    ]]> telah selesai melakukan pemerikasaan SkidTank nomor polisi <![CDATA[
+        <b>%2$s</b>
+    ]]> milik <![CDATA[
+        <b>%3$s</b>
+    ]]>. </string>
+
+</resources>

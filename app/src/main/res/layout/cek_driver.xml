@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:padding="8dp"
+    tools:layout_editor_absoluteY="89dp">
+
+    <Button
+        android:id="@+id/btSaveDriver"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedbtngreen"
+        android:text="@string/save_button"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/elpiji_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/pertamina_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="341dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btSaveDriver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtSH"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/safety_helm" />
+
+                    <RadioGroup
+                        android:id="@+id/rgSH"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdSH1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdSH2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoSH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/roundbtnyellow"
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtUni"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/uniform" />
+
+                    <RadioGroup
+                        android:id="@+id/rgUni"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdUni1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdUni2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoUni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/roundbtnyellow"
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtSS"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/safety_shoes" />
+
+                    <RadioGroup
+                        android:id="@+id/rgSS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdSS1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdSS2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoSS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundbtnyellow"
+                        android:layout_margin="8dp"
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBT"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:text="@string/barang_terlarang" />
+
+                    <RadioGroup
+                        android:id="@+id/rgBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdBT1"
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ada" />
+
+                        <RadioButton
+                            android:id="@+id/rdBT2"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="@string/ta" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btFotoBT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/roundbtnyellow"
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgSH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/safety_helm"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/safety_helm"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/safety_helm"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/safety_helm"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
