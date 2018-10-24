@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -166,6 +167,25 @@ public class CekTruck extends Activity {
         }
         globalListener();
     }
+
+    private ImageView help;
+    private ImageView help2;
+    private ImageView help3;
+    private ImageView help4;
+    private ImageView help5;
+    private ImageView help6;
+    private ImageView help7;
+    private ImageView help8;
+    private TextView helo;
+    private TextView helo2;
+    private TextView helo3;
+    private TextView helo4;
+    private TextView helo5;
+    private TextView helo6;
+    private TextView helo7;
+    private TextView helo8;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -173,6 +193,31 @@ public class CekTruck extends Activity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.cek_truck);
+
+        help = findViewById(R.id.helpKIM);
+        help2 = findViewById(R.id.helpAPARCO2);
+        help3 = findViewById(R.id.helpAPARDCP);
+        help4 = findViewById(R.id.helpHT);
+        help5 = findViewById(R.id.helpVESSEL);
+        help6 = findViewById(R.id.helpEP);
+        help7 = findViewById(R.id.helpLAMP);
+        help8 = findViewById(R.id.helpBAN);
+        helo = findViewById(R.id.helo);
+        helo.setVisibility(View.GONE);
+        helo2 = findViewById(R.id.helo2);
+        helo2.setVisibility(View.GONE);
+        helo3 = findViewById(R.id.helo3);
+        helo3.setVisibility(View.GONE);
+        helo4 = findViewById(R.id.helo4);
+        helo4.setVisibility(View.GONE);
+        helo5 = findViewById(R.id.helo5);
+        helo5.setVisibility(View.GONE);
+        helo6 = findViewById(R.id.helo6);
+        helo6.setVisibility(View.GONE);
+        helo7 = findViewById(R.id.helo7);
+        helo7.setVisibility(View.GONE);
+        helo8 = findViewById(R.id.helo8);
+        helo8.setVisibility(View.GONE);
 
         BtSaveTruck = (Button)findViewById(R.id.btSaveTruck);
         BtSaveTruck.setEnabled(false);
@@ -359,6 +404,62 @@ public class CekTruck extends Activity {
 
             }
         });
+    }
+
+    public void click (View v)
+    {
+        if (helo.getVisibility() == View.GONE){
+            helo.setVisibility(View.VISIBLE);
+        }else{helo.setVisibility(View.GONE);}
+    }
+
+    public void click2 (View v)
+    {
+        if (helo2.getVisibility() == View.GONE){
+            helo2.setVisibility(View.VISIBLE);
+        }else{helo2.setVisibility(View.GONE);}
+    }
+
+    public void click3 (View v)
+    {
+        if (helo3.getVisibility() == View.GONE){
+            helo3.setVisibility(View.VISIBLE);
+        }else{helo3.setVisibility(View.GONE);}
+    }
+
+    public void click4 (View v)
+    {
+        if (helo4.getVisibility() == View.GONE){
+            helo4.setVisibility(View.VISIBLE);
+        }else{helo4.setVisibility(View.GONE);}
+    }
+
+    public void click5 (View v)
+    {
+        if (helo5.getVisibility() == View.GONE){
+            helo5.setVisibility(View.VISIBLE);
+        }else{helo5.setVisibility(View.GONE);}
+    }
+
+    public void click6 (View v)
+    {
+        if (helo6.getVisibility() == View.GONE){
+            helo6.setVisibility(View.VISIBLE);
+        }else{helo6.setVisibility(View.GONE);}
+    }
+
+    public void click7 (View v)
+    {
+        if (helo7.getVisibility() == View.GONE){
+            helo7.setVisibility(View.VISIBLE);
+        }else{helo7.setVisibility(View.GONE);}
+    }
+
+    public void click8 (View v)
+    {
+        if (helo8.getVisibility() == View.GONE){
+            helo8.setVisibility(View.VISIBLE);
+        }else{helo8.setVisibility(View.GONE);}
     }
 
     private void globalListener(){

@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12">
 
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="655dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
 
                     <TextView
                         android:id="@+id/txtKIM"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -102,7 +102,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgKIM"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -111,7 +111,7 @@
 
                         <RadioButton
                             android:id="@+id/rdKIM1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -119,7 +119,7 @@
 
                         <RadioButton
                             android:id="@+id/rdKIM2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -127,16 +127,33 @@
 
                     </RadioGroup>
 
+
                     <Button
                         android:id="@+id/btFotoKIM"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
+                        android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
+                    <ImageView
+                        android:id="@+id/helpKIM"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
+
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -146,7 +163,7 @@
 
                     <TextView
                         android:id="@+id/txtAPARCO2"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -155,7 +172,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgAPARCO2"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -164,7 +181,7 @@
 
                         <RadioButton
                             android:id="@+id/rdAPARCO21"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -172,7 +189,7 @@
 
                         <RadioButton
                             android:id="@+id/rdAPARCO22"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -185,11 +202,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
-                        android:textColor="@android:color/background_light"/>
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpAPARCO2"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click2"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -199,7 +232,7 @@
 
                     <TextView
                         android:id="@+id/txtAPARDCP"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -208,7 +241,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgAPARDCP"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -217,7 +250,7 @@
 
                         <RadioButton
                             android:id="@+id/rdAPARDCP1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -225,7 +258,7 @@
 
                         <RadioButton
                             android:id="@+id/rdAPARDCP2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -238,11 +271,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
+                        android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
+                    <ImageView
+                        android:id="@+id/helpAPARDCP"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click3"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
+
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -252,7 +301,7 @@
 
                     <TextView
                         android:id="@+id/txtHT"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -261,7 +310,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgHT"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -270,7 +319,7 @@
 
                         <RadioButton
                             android:id="@+id/rdHT1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -278,7 +327,7 @@
 
                         <RadioButton
                             android:id="@+id/rdHT2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -291,11 +340,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
-                        android:textColor="@android:color/background_light"/>
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpHT"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click4"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -305,7 +370,7 @@
 
                     <TextView
                         android:id="@+id/txtVessel"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -313,7 +378,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgV"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -322,7 +387,7 @@
 
                         <RadioButton
                             android:id="@+id/rdV1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -330,7 +395,7 @@
 
                         <RadioButton
                             android:id="@+id/rdV2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -343,11 +408,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
-                        android:textColor="@android:color/background_light"/>
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpVESSEL"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click5"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -357,7 +438,7 @@
 
                     <TextView
                         android:id="@+id/txtElectricalPart"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -366,7 +447,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgEP"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -375,7 +456,7 @@
 
                         <RadioButton
                             android:id="@+id/rdEP1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -383,7 +464,7 @@
 
                         <RadioButton
                             android:id="@+id/rdEP2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -396,11 +477,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
-                        android:textColor="@android:color/background_light"/>
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpEP"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click6"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -410,7 +507,7 @@
 
                     <TextView
                         android:id="@+id/txtLamp"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -419,7 +516,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgLamp"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -428,7 +525,7 @@
 
                         <RadioButton
                             android:id="@+id/rdLamp1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -436,7 +533,7 @@
 
                         <RadioButton
                             android:id="@+id/rdLamp2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -449,11 +546,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
-                        android:textColor="@android:color/background_light"/>
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpLAMP"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click7"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -463,7 +576,7 @@
 
                     <TextView
                         android:id="@+id/txtBanRoda"
-                        android:layout_width="450dp"
+                        android:layout_width="27dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -472,7 +585,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgBan"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -481,7 +594,7 @@
 
                         <RadioButton
                             android:id="@+id/rdBan1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -489,7 +602,7 @@
 
                         <RadioButton
                             android:id="@+id/rdBan2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -502,11 +615,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="@string/foto"
                         android:background="@drawable/roundbtnyellow"
-                        android:textColor="@android:color/background_light"/>
+                        android:text="@string/foto"
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpBAN"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:onClick="click8"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_stat_help" />
+
+
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/helo8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
             </LinearLayout>
         </ScrollView>
