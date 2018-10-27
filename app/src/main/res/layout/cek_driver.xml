@@ -61,7 +61,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="655dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="655dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +92,7 @@
 
                     <TextView
                         android:id="@+id/txtSH"
-                        android:layout_width="450dp"
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -100,7 +100,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgSH"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -109,7 +109,7 @@
 
                         <RadioButton
                             android:id="@+id/rdSH1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -117,7 +117,7 @@
 
                         <RadioButton
                             android:id="@+id/rdSH2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -134,7 +134,22 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
+                    <ImageView
+                        android:id="@+id/helpSH"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:onClick="klik1"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_stat_help" />
+
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/panduan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -144,7 +159,7 @@
 
                     <TextView
                         android:id="@+id/txtUni"
-                        android:layout_width="450dp"
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -153,7 +168,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgUni"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -162,7 +177,7 @@
 
                         <RadioButton
                             android:id="@+id/rdUni1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -170,7 +185,7 @@
 
                         <RadioButton
                             android:id="@+id/rdUni2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -185,9 +200,24 @@
                         android:layout_margin="8dp"
                         android:background="@drawable/roundbtnyellow"
                         android:text="@string/foto"
-                        android:textColor="@android:color/background_light"/>
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpUNI"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:onClick="klik2"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/panduan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -197,7 +227,7 @@
 
                     <TextView
                         android:id="@+id/txtSS"
-                        android:layout_width="450dp"
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -206,7 +236,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgSS"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -215,7 +245,7 @@
 
                         <RadioButton
                             android:id="@+id/rdSS1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -223,7 +253,7 @@
 
                         <RadioButton
                             android:id="@+id/rdSS2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -235,12 +265,27 @@
                         android:id="@+id/btFotoSS"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/roundbtnyellow"
                         android:layout_margin="8dp"
+                        android:background="@drawable/roundbtnyellow"
                         android:text="@string/foto"
-                        android:textColor="@android:color/background_light"/>
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpSS"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:onClick="klik3"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/panduan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -250,7 +295,7 @@
 
                     <TextView
                         android:id="@+id/txtBT"
-                        android:layout_width="450dp"
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -259,7 +304,7 @@
 
                     <RadioGroup
                         android:id="@+id/rgBT"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="1"
@@ -268,7 +313,7 @@
 
                         <RadioButton
                             android:id="@+id/rdBT1"
-                            android:layout_width="3dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -276,7 +321,7 @@
 
                         <RadioButton
                             android:id="@+id/rdBT2"
-                            android:layout_width="12dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="checkButton"
@@ -291,9 +336,24 @@
                         android:layout_margin="8dp"
                         android:background="@drawable/roundbtnyellow"
                         android:text="@string/foto"
-                        android:textColor="@android:color/background_light"/>
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:id="@+id/helpBT"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:onClick="klik4"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_stat_help" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/panduan4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="panduan untuk ban" />
 
             </LinearLayout>
         </ScrollView>

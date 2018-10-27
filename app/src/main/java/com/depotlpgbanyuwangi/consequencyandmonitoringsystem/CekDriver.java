@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -122,6 +123,17 @@ public class CekDriver extends Activity {
         globalListener();
     }
 
+    private ImageView help;
+    private ImageView help2;
+    private ImageView help3;
+    private ImageView help4;
+    private TextView panduan;
+    private TextView panduan2;
+    private TextView panduan3;
+    private TextView panduan4;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -129,6 +141,20 @@ public class CekDriver extends Activity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.cek_driver);
+
+        help = findViewById(R.id.helpSH);
+        help2 = findViewById(R.id.helpUNI);
+        help3 = findViewById(R.id.helpSS);
+        help4 = findViewById(R.id.helpBT);
+
+        panduan = findViewById(R.id.panduan);
+        panduan.setVisibility(View.GONE);
+        panduan2 = findViewById(R.id.panduan2);
+        panduan2.setVisibility(View.GONE);
+        panduan3 = findViewById(R.id.panduan3);
+        panduan3.setVisibility(View.GONE);
+        panduan4 = findViewById(R.id.panduan4);
+        panduan4.setVisibility(View.GONE);
 
         BtSaveDriver = (Button)findViewById(R.id.btSaveDriver);
         BtSaveDriver.setEnabled(false);
@@ -259,6 +285,34 @@ public class CekDriver extends Activity {
                     MySingleton.getmInstance(CekDriver.this).addToRequestQueue(stringRequest);
             }
         });
+    }
+
+    public void klik1 (View v)
+    {
+        if (panduan.getVisibility() == View.GONE){
+            panduan.setVisibility(View.VISIBLE);
+        }else{panduan.setVisibility(View.GONE);}
+    }
+
+    public void klik2 (View v)
+    {
+        if (panduan2.getVisibility() == View.GONE){
+            panduan2.setVisibility(View.VISIBLE);
+        }else{panduan2.setVisibility(View.GONE);}
+    }
+
+    public void klik3 (View v)
+    {
+        if (panduan3.getVisibility() == View.GONE){
+            panduan3.setVisibility(View.VISIBLE);
+        }else{panduan3.setVisibility(View.GONE);}
+    }
+
+    public void klik4 (View v)
+    {
+        if (panduan4.getVisibility() == View.GONE){
+            panduan4.setVisibility(View.VISIBLE);
+        }else{panduan4.setVisibility(View.GONE);}
     }
 
     private void globalListener(){
