@@ -169,7 +169,7 @@ public class CekTruck extends Activity {
         globalListener();
     }
 
-
+    private ImageView bantuan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,6 +178,8 @@ public class CekTruck extends Activity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.cek_truck);
+
+        bantuan = findViewById(R.id.bantuan);
 
 
         BtSaveTruck = (Button)findViewById(R.id.btSaveTruck);
@@ -367,7 +369,10 @@ public class CekTruck extends Activity {
         });
     }
 
-
+    public void panduan (View v)
+    {
+        startActivity(new Intent(CekTruck.this,PetunjukTeknis.class));
+    }
 
     private void globalListener(){
         if(idKIM==1 && idAPARCO2==1 && idAPARDCP==1 && idHT==1 && idV==1 && idEP==1 && idLamp==1 && idBan==1

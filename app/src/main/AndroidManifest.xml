@@ -110,6 +110,9 @@
             android:name="com.depotlpgbanyuwangi.consequencyandmonitoringsystem.Unblock"
             android:screenOrientation="landscape" />
         <activity android:name="com.depotlpgbanyuwangi.consequencyandmonitoringsystem.Tambah"></activity>
+        <activity android:name="com.depotlpgbanyuwangi.consequencyandmonitoringsystem.PetunjukTeknis"
+            android:screenOrientation="landscape">
+        </activity>
     </application>
 
 </manifest>

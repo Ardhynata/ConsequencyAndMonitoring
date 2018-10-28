@@ -8,59 +8,849 @@
 
     <ImageView
         android:id="@+id/imageView22"
-        android:layout_width="109dp"
-        android:layout_height="72dp"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/pertamina_logo" />
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/pertamina_logo" />
 
     <ImageView
         android:id="@+id/imageView23"
-        android:layout_width="106dp"
-        android:layout_height="77dp"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="840dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="379dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/elpiji_logo" />
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/elpiji_logo" />
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
+            android:id="@+id/scrollView3"
             android:layout_width="855dp"
-            android:layout_height="362dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="0.0">
 
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/scrollView3">
+
+
+                <TableRow
+                    android:background="#808080">
+
+                    <TextView
+                        android:layout_width="201dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="ITEM"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="397dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="KETERANGAN"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="BATAS WAKTU PERbAIKAN"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#A9A9A9">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="KIM"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Kartu Ijin masuk masih berlaku dengan catatan administrasi STNK (Pajak dan Plat) dan KEUR masih berlaku" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Administrasi driver masih berlaku (KTP, SIM, Kartu Pekerja)" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#808080">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="APAR CO2"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Terdapat min 1 unit @ 3 kg didalam kabin" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="7 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Kondisi selang dan nozzle baik, tidak bocor dan pecah" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="3 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="terdapat segel dan riwayat pemeriksaan yang masih berlaku" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="3 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A9A9A9">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="APAR DCP"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Terdapat min 2 unit @ 9 kg diluar kabin" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="7 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Kondisi selang dan nozzle baik, tidak bocor dan pecah" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="3 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="terdapat segel dan riwayat pemeriksaan yang masih berlaku" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="3 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="tersimpan pada rumah APAR dikiri-kanan mobil tanki dan mudah untuk \ndijangkau" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="7 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#808080">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="RODA / BAN"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Tidak licin/gundul/pecah-pecah (alur/kembangan ban tersisa min. 2 mm)" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="7 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Mur baut ban terpasang secara lengkap dan benar" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Tidak boleh Vulkanisir" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Kondisi Velg baik/ tidak retak" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A9A9A9">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="KNALPOT"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Berada didepan dan menghadap ke kanan" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Terpasang Flame Trap dalam kondisi baik" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Tidak Bocor" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#808080">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="VESSEL"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Warna putih dalam kondisi baik pada badan tanki" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Tidak Bocor pada badan, semua sambungan dan pipa di tanki" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Dilengkapi Emergency Valve" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Terdapat Rotary Gauge/ Level Gauge" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Terpasang Pressure dan Temperature Gauge dalam kondisi baik" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A9A9A9">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="SISTEM \nKELISTRIKAN"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Semua lampu dalam kondisi baik, dapat berfungsi dan tidak pecah" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Terdapat Rotary Lamp yang dapat berfungsi" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="kondisi kabel tertutup/ terisolasi dengan baik" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Kondisi accu dalam keadaaan tertutup (cover)" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Kabel accu tidak longgar" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Terdapat safety switch didalam kabin" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#808080">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="REM"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="Rem dapat bekerja seketika dan tidak ada kebocoran angin" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Rem tangan berfungsi" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A9A9A9">
+
+                    <TextView
+                        android:layout_width="157dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="HEAD TRUCK dan CHASIS"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="532dp"
+                                android:layout_height="match_parent"
+                                android:text="warna merah dalam kondisi baik untuk kabin dan hitam untuk chasis " />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="15 Hari Kerja"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="tidak boleh dalam kondisi korosi / keropos" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="7 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Kaca pada kabin (depan/pintu/spion) tidak ada yang pecah dan masih \nberfungsi sesuai fungsinya" />
+
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="match_parent"
+                                android:text="0 Hari Kerja"
+                                android:textAlignment="center" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
         </ScrollView>
 
     </android.support.constraint.ConstraintLayout>
-
 
 </android.support.constraint.ConstraintLayout>

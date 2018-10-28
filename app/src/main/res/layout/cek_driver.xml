@@ -134,22 +134,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpSH"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:onClick="klik1"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/panduan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -202,22 +187,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpUNI"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:onClick="klik2"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/panduan2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -270,22 +240,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpSS"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:onClick="klik3"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/panduan3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -338,22 +293,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpBT"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:onClick="klik4"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/panduan4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
             </LinearLayout>
         </ScrollView>
@@ -406,5 +346,16 @@
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/petunjuk"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="juknis"
+        app:layout_constraintBottom_toBottomOf="@+id/btSaveDriver"
+        app:layout_constraintEnd_toStartOf="@+id/btSaveDriver"
+        app:layout_constraintTop_toTopOf="@+id/btSaveDriver"
+        android:src="@drawable/ic_stat_help" />
 
 </android.support.constraint.ConstraintLayout>
