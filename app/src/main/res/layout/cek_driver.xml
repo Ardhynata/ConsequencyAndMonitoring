@@ -140,7 +140,7 @@
                         android:layout_height="40dp"
                         android:onClick="klik1"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_stat_help" />
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
 
@@ -208,7 +208,7 @@
                         android:layout_height="40dp"
                         android:onClick="klik2"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_stat_help" />
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
 
@@ -276,7 +276,7 @@
                         android:layout_height="40dp"
                         android:onClick="klik3"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_stat_help" />
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
 
@@ -344,7 +344,7 @@
                         android:layout_height="40dp"
                         android:onClick="klik4"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_stat_help" />
+                        android:src="@drawable/ic_stat_help" />
 
                 </LinearLayout>
 

@@ -137,23 +137,30 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpKIM"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
 
-                <TextView
+                <LinearLayout
                     android:id="@+id/helo"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -206,23 +213,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpAPARCO2"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click2"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/helo2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -275,23 +266,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpAPARDCP"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click3"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/helo3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -344,23 +319,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpHT"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click4"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/helo4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -412,23 +371,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpVESSEL"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click5"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/helo5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -481,23 +424,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpEP"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click6"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/helo6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -550,23 +477,7 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpLAMP"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click7"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/helo7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -619,25 +530,8 @@
                         android:text="@string/foto"
                         android:textColor="@android:color/background_light" />
 
-                    <ImageView
-                        android:id="@+id/helpBAN"
-                        android:layout_width="2dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:onClick="click8"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_stat_help" />
-
-
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/helo8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="panduan untuk ban" />
 
             </LinearLayout>
         </ScrollView>
